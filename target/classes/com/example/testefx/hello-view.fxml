@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testefx.HelloController">
+   <children>
+      <TextField fx:id="user" layoutX="381.0" layoutY="115.0" prefHeight="38.0" prefWidth="168.0" promptText="usuario" style="-fx-background-color: transparent; -fx-border-color: #0d8f08; -fx-border-width: 0px 0px 2px 0px;" styleClass="text" stylesheets="@estilo.css">
+         <font>
+            <Font size="17.0" />
+         </font></TextField>
+      <Rectangle arcHeight="5.0" fill="#0d8f08" height="400.0" strokeType="INSIDE" strokeWidth="0.0" width="313.0" />
+      <ImageView fitHeight="58.0" fitWidth="258.0" layoutX="329.0" layoutY="14.0">
+         <image>
+            <Image url="@primavera.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="46.0" layoutY="80.0" prefHeight="240.0" prefWidth="221.0" styleClass="text" stylesheets="@estilo.css" text="bem vindo! faça login para continuar" textAlignment="RIGHT" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Nirmala UI" size="36.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="senha" layoutX="381.0" layoutY="185.0" prefHeight="38.0" prefWidth="168.0" promptText="senha" style="-fx-background-color: transparent; -fx-border-color: #0d8f08; -fx-border-width: 0px 0px 2px 0px;" styleClass="text" stylesheets="@estilo.css">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </PasswordField>
+      <Button id="entrar" fx:id="entrar" defaultButton="true" layoutX="413.0" layoutY="263.0" mnemonicParsing="false" onAction="#entrar" prefHeight="38.0" prefWidth="91.0" style="-fx-background-color: #0d8f08;" styleClass="text" stylesheets="@estilo.css" text="entrar" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Button>
+      <Hyperlink layoutX="398.0" layoutY="350.0" text="esqueceu sua senha?" textFill="#0d8f08" />
+      <FontAwesomeIconView fill="#0d8f08" glyphName="KEY" layoutX="343.0" layoutY="215.0" size="27.0" text="" />
+      <FontAwesomeIconView fill="#0d8f08" glyphName="USER" layoutX="347.0" layoutY="143.0" size="27.0" />
+   </children>
+</Pane>

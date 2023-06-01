@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Nunito Sans 7pt';
+    src: url('NunitoSans_7pt-Bold.ttf');
+}
+
+.text {
+    -fx-font-family: "Nunito Sans 7pt";
+}
